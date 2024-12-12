@@ -1,7 +1,8 @@
 import os
 from tkinter import *
 
-
+def hello():
+    print("hello world")
 def analyze_path():
     path = entry.get()
     if not os.path.exists(path):
@@ -61,5 +62,6 @@ Checkbutton(root, text="Доп информация (картинки, музы�
 Button(root, text="Анализировать", command=analyze_path).pack()
 result_label = Label(root, text="")
 result_label.pack()
+hello()
 root.mainloop()
 
